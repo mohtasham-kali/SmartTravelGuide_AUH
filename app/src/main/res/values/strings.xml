@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">SmartTravelGuide_AUH</string>
+    <string name="map_key" translatable="false">AIzaSyClqM8ZikuXsJdb_0M8qVm_z2CJmxeBVnQ</string>
+</resources>

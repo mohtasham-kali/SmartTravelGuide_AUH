@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#2d2d2d"
+    android:gravity="center_vertical"
+    >
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/travel"
+        />
+
+    <Button
+        android:id="@+id/navButton1"
+        android:layout_below="@id/logo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@color/appGreen"
+        android:drawableStart="@drawable/loc"
+        android:onClick="redirectToFindLocation"
+        android:padding="5dp"
+        android:text="Find Current Location"
+        android:textColorHint="#fff"
+        android:textSize="20sp"
+        android:textStyle="bold|italic" />
+
+    <Button
+        android:id="@+id/navButton2"
+        android:layout_below="@id/navButton1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="30dp"
+        android:background="@color/appGreen"
+        android:drawableStart="@drawable/dist"
+        android:padding="5dp"
+        android:textColorHint="#fff"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        android:text="Calculate Distance"
+        android:onClick="redirectToCalculateDistance"/>
+
+    <Button
+        android:id="@+id/navButton3"
+        android:layout_below="@id/navButton2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="30dp"
+        android:background="@color/appGreen"
+        android:drawableStart="@drawable/wea"
+        android:padding="5dp"
+        android:textColorHint="#fff"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        android:text="Weather Forecast"
+        android:onClick="redirectToWeatherForecast"/>
+
+    <Button
+        android:id="@+id/navButton4"
+        android:layout_below="@id/navButton3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="30dp"
+        android:background="@color/appGreen"
+        android:drawableStart="@drawable/loct"
+        android:padding="5dp"
+        android:textColorHint="#fff"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        android:text="Locate A Spot"
+        android:onClick="redirectToLocateASpot"/>
+
+</RelativeLayout>
